@@ -34,4 +34,14 @@ theDF$Sport
 theDF[3, 2] # 3rd row, 2nd column
 theDF[3, 1:3]
 theDF[c(3,5),1:3]
+theDF[,3] # Returns vector
+theDF[,2:3] # Returns dataframe
+theDF[,3,drop=FALSE] # Returns dataframe
+theDF[2:5,]
+
+theDF[,c("First","Sport")]
+theDF[,c("Sport","First")]
+
+theDF["Sport"] # returns dataframe
+theDF[["Sport"]] # returns vector
 
