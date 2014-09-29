@@ -32,3 +32,21 @@ emptyList[[1]] <- 5
 emptyList
 
 list5[[1]]
+names(list5)
+
+list5$data.frame
+list5[["data.frame"]]
+list5[[1]]$Sport
+list5[[1]][,"Second"]
+list5[[1]][,"Second",drop=FALSE]
+
+length(list5)
+
+list5
+
+list5[[4]] <- 2
+list5
+
+list5$NewElement <- 3:6
+list5
+names(list5)
