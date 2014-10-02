@@ -45,3 +45,22 @@ theDF[,c("Sport","First")]
 theDF["Sport"] # returns dataframe
 theDF[["Sport"]] # returns vector
 
+h1 <- c("host1","host4","host9")
+h2 <- c("host1","host2","host3","host4","host5","host6","host7")
+f1 <- c("John1","John2","John3","John4","John5","John6","John7")
+
+hostnamesDF <- data.frame(Hostname=h1)
+fullDF <- data.frame(Hostname=h2,Contact=f1)
+
+hostnamesDF
+fullDF
+
+fullDF$Hostname %in% hostnamesDF$Hostname
+
+require(compare)
+
+comparison <- compare(hostnamesDF, fullDF, allowAll=FALSE)
+comparison$tM
+
+
+
